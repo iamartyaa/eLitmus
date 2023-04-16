@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "287897668873",
+    "project_id": "tresurehunt-d858e",
+    "storage_bucket": "tresurehunt-d858e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287897668873:android:b62bdc0955319877a8d7d8",
+        "android_client_info": {
+          "package_name": "com.example.pirate_hunt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287897668873-7s9a0ihdqd7gmolpos14oe7n4sk2rdgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1zBg07PAI-l1cZvhUQlDrlZxMyQ7IgD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287897668873-7s9a0ihdqd7gmolpos14oe7n4sk2rdgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

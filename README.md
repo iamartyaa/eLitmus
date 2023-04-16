@@ -30,19 +30,26 @@ This way is the least optimal as such leaders who just hurry to complete a goal 
 ## Feature List (Must Have)
  
 ✅ Anyone with an email address can create an Id and password to participate in the game
+
 ✅ The puzzle must contain
+
 - ✅ Minimum 5 clues
 - ✅ Minimum 2 dead-ends
 - ✅ Minimum 1 solution 
 - ✅ All the progress / user data (eg - time taken by each user for every step, solution accuracy, etc.) depending on your puzzle requirements should be stored for every user
+
 ❌ On refreshing, from either browser or website, the puzzle should start from the same step or give the user an option to restart
+
 ✅ A dashboard for the admin where the progress of all the users can be tracked & analyzed
 
 ## Additional Requirements
  
 ❌ User analytics (eg - time taken by each user for every step, solution accuracy, etc.) depending on your puzzle should be stored and shown in the admin dashboard
+
 ❌ Data analysis using different graphs or tables
+
 ✅ User Leaderboard
+
 
 ## A note to the Interviewer 
 
@@ -50,6 +57,9 @@ I'm really sorry I couldn't submit you the website instead I'm submitting this a
 
 ## ScreenShots of the Application 
 
+<img src="1.jpg" height="300em" /> |<img src="2.jpg" height="300em" /> |<img src="3.jpg" height="300em" /> |
+<img src="4.jpg" height="300em" /> |<img src="5.jpg" height="300em" /> |<img src="6.jpg" height="300em" /> |
+<img src="7.jpg" height="300em" /> |<img src="8.jpg" height="300em" /> |
 
 
 ## Setting up

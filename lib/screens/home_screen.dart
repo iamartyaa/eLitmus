@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:pirate_hunt/model/user_model.dart';
 import 'package:pirate_hunt/screens/login_screen.dart';
 import 'package:pirate_hunt/widgets/game.dart';
+import 'package:pirate_hunt/widgets/leaderboard.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -87,13 +88,35 @@ class _HomeScreenState extends State<HomeScreen> {
           ? Center(
               child: Container(
                 child: Column(
-                  mainAxisAlignment: loggedInUser.score !=null ? MainAxisAlignment.start: MainAxisAlignment.center,
+                  mainAxisAlignment: loggedInUser.score != null
+                      ? MainAxisAlignment.start
+                      : MainAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       child: Text(
                         'Welcome ${loggedInUser.userName} !',
                       ),
+                    ),
+                    const SizedBox(
+                      height: 25,
+                    ),
+                    if (loggedInUser.score != null)
+                      Container(
+                        height: 400,
+                          child: Column(
+                        children: [
+                          const Center(
+                              child: Text(
+                            'Leaderboard',
+                            style: TextStyle(
+                                fontSize: 24, fontWeight: FontWeight.w600),
+                          )),
+                          ExpenseList(),
+                        ],
+                      )),
+                    const SizedBox(
+                      height: 25,
                     ),
                     ElevatedButton(
                       onPressed: () {
@@ -101,7 +124,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           gameState = 0;
                         });
                       },
-                      child: Text(loggedInUser.score !=null? 'Restart Puzzle' : 'Start Puzzle'),
+                      child: Text(loggedInUser.score != null
+                          ? 'Restart Puzzle'
+                          : 'Start Puzzle'),
                     ),
                   ],
                 ),

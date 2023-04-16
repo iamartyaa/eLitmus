@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pirate_hunt/model/user_model.dart';
 import 'package:pirate_hunt/screens/login_screen.dart';
+import 'package:pirate_hunt/widgets/game.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,6 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   User? user = FirebaseAuth.instance.currentUser;
   UserModel loggedInUser = UserModel();
+  int gameState = -1;
 
   @override
   void initState() {
@@ -34,54 +36,78 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome'),
+        title: const Text('Pirate Hunt'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SizedBox(
-                height: 200,
-                child: Image.asset(
-                  "assets/logo.png",
-                  fit: BoxFit.contain,
-                ),
+      drawer: Drawer(
+        child: ListView(
+          padding: const EdgeInsets.all(0),
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.redAccent,
               ),
-              const Text(
-                "Welcome back",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+              child: CircleAvatar(
+                radius: 10,
+                backgroundColor: Colors.amber,
               ),
-              Text(
-                "${loggedInUser.userName}",
+            ),
+            ListTile(
+              title: Text(
+                "Username : ${loggedInUser.userName}",
                 style: const TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              Text(
-                "${loggedInUser.email}",
-                style: const TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w500,
-                ),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Highest score: ${loggedInUser.score}'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ActionChip(
+              backgroundColor: Colors.redAccent,
+              label: const Text(
+                "LogOut",
+                style: TextStyle(color: Colors.white),
               ),
-              ActionChip(
-                label: const Text("LogOut"),
-                onPressed: () {
-                  logout(context);
-                },
-              ),
-            ],
-          ),
+              onPressed: () {
+                logout(context);
+              },
+            ),
+          ],
         ),
       ),
+      body: gameState < 0
+          ? Center(
+              child: Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Text(
+                        'Welcome ${loggedInUser.userName} !',
+                      ),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        setState(() {
+                          gameState=0;
+                        });
+                      },
+                      child: Text('Start Puzzle'),
+                    ),
+                  ],
+                ),
+              ),
+            )
+          : Game(game: gameState,),
     );
   }
 
@@ -89,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
     await FirebaseAuth.instance.signOut();
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (ctx) => LoginScreen(),
+        builder: (ctx) => const LoginScreen(),
       ),
     );
   }

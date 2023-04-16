@@ -4,14 +4,16 @@ class UserModel {
   String? uid;
   String? email;
   String? userName;
+  int? score = 0;
 
-  UserModel({this.uid, this.email, this.userName});
+  UserModel({this.uid, this.email, this.userName,this.score});
 
   factory UserModel.fromMap(map){
     return UserModel(
       uid: map['uid'],
       email: map['email'],
       userName: map['userName'],
+      score: map['score'],
     );
   }
 
@@ -20,6 +22,7 @@ class UserModel {
       'uid' : uid,
       'email': email,
       'userName': userName,
+      'score': score,
     };
   }
 }

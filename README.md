@@ -54,12 +54,16 @@ This way is the least optimal as such leaders who just hurry to complete a goal 
 
 ✅ User Leaderboard
 
+
 ## ScreenShots of the Application 
 
 <img src="1.jpeg" height="300em" /> |<img src="2.jpeg" height="300em" /> |<img src="3.jpeg" height="300em" /> |
 <img src="4.jpeg" height="300em" /> |<img src="5.jpeg" height="300em" /> |<img src="6.jpeg" height="300em" /> |
 <img src="7.jpeg" height="300em" /> |<img src="8.jpeg" height="300em" /> |
 
+## Map used as Puzzle 
+
+<img src="onepiecemap.png" width="650em" />
 
 ## Setting up
 

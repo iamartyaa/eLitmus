@@ -6,6 +6,10 @@ The puzze follows a series of clues / islands that the user ( as Pirate ) has to
 
 It's a must play! You run you nerves, fight your score against your friends on the leaderboard :) 
 
+## A note to the Evaluator
+
+I'm really sorry I couldn't submit you the website instead I'm submitting this android/app fulfilling all the requirements you mentioned for the website. Ideally I am not a web developer instead I am a full stack app developer. The reason I am writing you this note is because I would really be thankful if you considered this app as my assignment. I know front-end web development and moving towards being a full stack web developer by my interview or joining as an intern. I learnt app dev from 0 to top and would do the same in web dev too. I I promise to be a full stack web developer by my joining ( if selected for further rounds ). Thank you eLitmus. I made this app from scratch to fulfill the requirements and would be happy if considered :)
+
 ## Soft skill to be Assessed 
 
 LeaderShip ! Leadership is one of the most essential soft skill required in the industry in order to lead your team to fulfill org's goals on time with maximum performance. This puzzle tests you up on various aspects of Leadership like :
@@ -50,16 +54,11 @@ This way is the least optimal as such leaders who just hurry to complete a goal 
 
 ✅ User Leaderboard
 
-
-## A note to the Interviewer 
-
-I'm really sorry I couldn't submit you the website instead I'm submitting this android/app fulfilling all the requirements you mentioned for the website. Ideally I am not a web developer instead I am a full stack app developer. The reason I am writing you this note is because I would really be thankful if you considered this app as my assignment. I know front-end web development and moving towards being a full stack web developer by my interview or joining as an intern. I learnt app dev from 0 to top and would do the same in web dev too. I I promise to be a full stack web developer by my joining ( if selected for further rounds ). Thank you eLitmus.
-
 ## ScreenShots of the Application 
 
-<img src="1.jpg" height="300em" /> |<img src="2.jpg" height="300em" /> |<img src="3.jpg" height="300em" /> |
-<img src="4.jpg" height="300em" /> |<img src="5.jpg" height="300em" /> |<img src="6.jpg" height="300em" /> |
-<img src="7.jpg" height="300em" /> |<img src="8.jpg" height="300em" /> |
+<img src="1.jpeg" height="300em" /> |<img src="2.jpeg" height="300em" /> |<img src="3.jpeg" height="300em" /> |
+<img src="4.jpeg" height="300em" /> |<img src="5.jpeg" height="300em" /> |<img src="6.jpeg" height="300em" /> |
+<img src="7.jpeg" height="300em" /> |<img src="8.jpeg" height="300em" /> |
 
 
 ## Setting up

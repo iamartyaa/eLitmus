@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ? Center(
               child: Container(
                 child: Column(
-                  mainAxisAlignment: loggedInUser.score != null
+                  mainAxisAlignment: loggedInUser.score != 0
                       ? MainAxisAlignment.start
                       : MainAxisAlignment.center,
                   children: [
@@ -101,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     const SizedBox(
                       height: 25,
                     ),
-                    if (loggedInUser.score != null)
+                    if (loggedInUser.score != 0)
                       Container(
                         height: 400,
                           child: Column(
@@ -124,7 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           gameState = 0;
                         });
                       },
-                      child: Text(loggedInUser.score != null
+                      child: Text(loggedInUser.score != 0
                           ? 'Restart Puzzle'
                           : 'Start Puzzle'),
                     ),

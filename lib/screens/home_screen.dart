@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
             ListTile(
-              title: Text('Highest score: ${loggedInUser.score}'),
+              title: Text('Highest score: ${loggedInUser.score ?? 0}'),
               onTap: () {
                 Navigator.pop(context);
               },
@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             )
-          : Game(game: gameState,),
+          : Game(game: gameState, name: loggedInUser.userName, email: loggedInUser.email, score: loggedInUser.score),
     );
   }
 

@@ -43,13 +43,13 @@ class _HomeScreenState extends State<HomeScreen> {
         child: ListView(
           padding: const EdgeInsets.all(0),
           children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(
+            DrawerHeader(
+              decoration: const BoxDecoration(
                 color: Colors.redAccent,
               ),
-              child: CircleAvatar(
-                radius: 10,
-                backgroundColor: Colors.amber,
+              child: Image.asset(
+                "assets/avatar.png",
+                fit: BoxFit.contain,
               ),
             ),
             ListTile(
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ? Center(
               child: Container(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: loggedInUser.score !=null ? MainAxisAlignment.start: MainAxisAlignment.center,
                   children: [
                     Padding(
                       padding: EdgeInsets.all(10),
@@ -98,16 +98,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     ElevatedButton(
                       onPressed: () {
                         setState(() {
-                          gameState=0;
+                          gameState = 0;
                         });
                       },
-                      child: Text('Start Puzzle'),
+                      child: Text(loggedInUser.score !=null? 'Restart Puzzle' : 'Start Puzzle'),
                     ),
                   ],
                 ),
               ),
             )
-          : Game(game: gameState, name: loggedInUser.userName, email: loggedInUser.email, score: loggedInUser.score),
+          : Game(
+              game: gameState,
+              name: loggedInUser.userName,
+              email: loggedInUser.email,
+              score: loggedInUser.score),
     );
   }
 

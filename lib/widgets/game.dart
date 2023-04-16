@@ -38,7 +38,7 @@ class _GameState extends State<Game> {
             "assets/onepiecemap.png",
           ),
         ),
-        if (widget.game >= 7)
+        if (widget.game > 7)
           Container(
             padding: const EdgeInsets.all(8),
             child: Column(
@@ -66,7 +66,7 @@ class _GameState extends State<Game> {
               ],
             ),
           ),
-        if (widget.game >= 1 && widget.game < 7)
+        if (widget.game >= 1 && widget.game <= 7)
           Container(
             padding: const EdgeInsets.all(8),
             child: Column(
@@ -138,6 +138,14 @@ class _GameState extends State<Game> {
         .collection("users")
         .doc(user.uid)
         .set(userModel.toMap());
+
+    await firebaseFirestore
+          .collection("leaderboard")
+          .doc(user.uid)
+          .set({
+            'name': widget.name,
+            'score': score,
+          });
 
     Fluttertoast.showToast(msg: "Puzzle completed!");
     // ignore: use_build_context_synchronously

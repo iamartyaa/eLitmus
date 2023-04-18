@@ -5,6 +5,8 @@ import 'package:pirate_hunt/screens/signup_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginScreen extends StatefulWidget {
+  
+  static const routeName = '/login-screen';
   const LoginScreen({super.key});
 
   @override

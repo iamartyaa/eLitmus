@@ -8,6 +8,8 @@ import 'package:pirate_hunt/model/user_model.dart';
 import 'package:pirate_hunt/screens/home_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
+  
+  static const routeName = '/signup-screen';
   const SignUpScreen({super.key});
 
   @override
@@ -242,7 +244,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
     userModel.email = user!.email;
     userModel.uid = user.uid ;
     userModel.userName = userNameController.text;
-    userModel.score = 0;
 
     await firebaseFirestore.collection("users").doc(user.uid)
     .set(userModel.toMap());

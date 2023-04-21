@@ -5,6 +5,8 @@ import 'package:pirate_hunt/screens/signup_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginScreen extends StatefulWidget {
+  
+  static const routeName = '/login-screen';
   const LoginScreen({super.key});
 
   @override
@@ -174,11 +176,7 @@ class _LoginScreenState extends State<LoginScreen> {
           .signInWithEmailAndPassword(email: email, password: password)
           .then((uid) => {
                 Fluttertoast.showToast(msg: "Login Successful"),
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (ctx) => HomeScreen(),
-                  ),
-                )
+                Navigator.of(context).pushReplacementNamed(HomeScreen.routeName),
               })
           .catchError((e) {
         Fluttertoast.showToast(msg: e!.msg);

@@ -57,8 +57,8 @@ This way is the least optimal as such leaders who just hurry to complete a goal 
 
 ## ScreenShots of the Application 
 
-<img src="1.jpeg" height="300em" /> |<img src="2.jpeg" height="300em" /> |<img src="3.jpeg" height="300em" /> |
-<img src="4.jpeg" height="300em" /> ||<img src="9.jpeg" height="300em" /> |<img src="5.jpeg" height="300em" /> |<img src="6.jpeg" height="300em" /> |
+<img src="1.jpeg" height="300em" /> |<img src="2.jpeg" height="300em" /> |<img src="3.png" height="300em" /> |
+<img src="4.png" height="300em" /> |<img src="9.png" height="300em" /> |<img src="5.jpeg" height="300em" /> |<img src="6.jpeg" height="300em" /> |
 <img src="7.jpeg" height="300em" /> |<img src="8.jpeg" height="300em" /> |
 
 ## Map used as Puzzle 

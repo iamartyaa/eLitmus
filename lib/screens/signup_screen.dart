@@ -8,6 +8,8 @@ import 'package:pirate_hunt/model/user_model.dart';
 import 'package:pirate_hunt/screens/home_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
+  
+  static const routeName = '/signup-screen';
   const SignUpScreen({super.key});
 
   @override

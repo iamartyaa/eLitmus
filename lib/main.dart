@@ -20,11 +20,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Pirate Hunt',
+      title: 'Bazaar',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.red,
-      ),
+      ), 
+      
       home: StreamBuilder(
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, userSnapshot) {
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
           }
         },
       ),
+      
       routes: {
         LoginScreen.routeName: (context) => const LoginScreen(),
         SignUpScreen.routeName:(context) => const SignUpScreen(),

@@ -244,7 +244,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
     userModel.email = user!.email;
     userModel.uid = user.uid ;
     userModel.userName = userNameController.text;
-    userModel.score = 0;
 
     await firebaseFirestore.collection("users").doc(user.uid)
     .set(userModel.toMap());

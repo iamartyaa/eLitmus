@@ -48,7 +48,7 @@ This way is the least optimal as such leaders who just hurry to complete a goal 
 
 ## Additional Requirements
  
-❌ User analytics (eg - time taken by each user for every step, solution accuracy, etc.) depending on your puzzle should be stored and shown in the admin dashboard
+✅ User analytics (eg - time taken by each user for every step, solution accuracy, etc.) depending on your puzzle should be stored and shown in the admin dashboard
 
 ❌ Data analysis using different graphs or tables
 
@@ -58,7 +58,7 @@ This way is the least optimal as such leaders who just hurry to complete a goal 
 ## ScreenShots of the Application 
 
 <img src="1.jpeg" height="300em" /> |<img src="2.jpeg" height="300em" /> |<img src="3.jpeg" height="300em" /> |
-<img src="4.jpeg" height="300em" /> |<img src="5.jpeg" height="300em" /> |<img src="6.jpeg" height="300em" /> |
+<img src="4.jpeg" height="300em" /> ||<img src="9.jpeg" height="300em" /> |<img src="5.jpeg" height="300em" /> |<img src="6.jpeg" height="300em" /> |
 <img src="7.jpeg" height="300em" /> |<img src="8.jpeg" height="300em" /> |
 
 ## Map used as Puzzle 

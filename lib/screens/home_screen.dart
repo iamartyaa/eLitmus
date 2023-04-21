@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bazaar'),
+        title: const Text('Pirate Hunt'),
         centerTitle: true,
         leading: IconButton(onPressed: (){
           logout(context);
@@ -49,10 +49,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> logout(BuildContext context) async {
     await FirebaseAuth.instance.signOut();
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (ctx) => const LoginScreen(),
-      ),
-    );
+    Navigator.of(context).pushReplacementNamed(LoginScreen.routeName);
   }
 }

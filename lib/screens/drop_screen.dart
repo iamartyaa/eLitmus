@@ -11,7 +11,7 @@ class DropScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
         Image.asset('assets/logo.png'),
-        const Text('Welcome to Bazaar'),
+        const Text('Welcome to Pirate Hunt'),
       ],),
     );
   }

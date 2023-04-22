@@ -1,6 +1,6 @@
 # Pirate Hunt
 
-Pirate Hunt is a project developed on Flutter & Dart as the assignment for the 2nd round of eLitmus. Pirate Hunt is a simple yet clever game to test one's most essential soft skill required in an organization i.e Leadership. 
+[Pirate Hunt](https://drive.google.com/file/d/1IrFTteAdrQWmaoJf_Ytbed9qvxSa8SuN/view?usp=sharing) is a project developed on Flutter & Dart as the assignment for the 2nd round of eLitmus. Pirate Hunt is a simple yet clever game to test one's most essential soft skill required in an organization i.e Leadership. 
 
 The puzze follows a series of clues / islands that the user ( as Pirate ) has to visit alongside his crew members ( swordsman, musician and a chef) in order to maximize the profit he can earn while getting his hands on the tresure.  Each decision you take, Each route you take to reach the Treasure Island credits you different gold coins as your score.
 
